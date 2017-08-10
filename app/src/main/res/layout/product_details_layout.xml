@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.recyclerview.ProductDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="386dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/pImage"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:padding="10dp"
+                android:src="@drawable/iphone"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="25dp"
+                android:weightSum="8">
+
+                <ImageView
+                    android:id="@+id/pImageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/iphone"/>
+                <ImageView
+                    android:id="@+id/pImageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/iphoneback"/>
+
+                <ImageView
+                    android:id="@+id/pImageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/iphoneside"/>
+
+                <ImageView
+                    android:id="@+id/pImageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_margin="5dp"
+                    android:padding="3dp"
+                    android:src="@drawable/iphoneview"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp"
+            >
+
+            <TextView
+                android:id="@+id/pName"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="MobileName"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="91dp"
+                    android:layout_height="match_parent"
+                    android:text="Special Price"
+                    android:textColor="#168423"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Ends in few hours"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="9"
+            android:layout_marginLeft="25dp">
+
+            <TextView
+                android:id="@+id/pAmount"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="\u20B9 7,499"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/pOffer"
+                android:layout_width="112dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="11% off"
+                android:textColor="#168423"
+                android:textSize="15dp" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/assured"
+                android:paddingBottom="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp">
+            <TextView
+                android:id="@+id/pRating"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:text="3.8"
+                android:textSize="15dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:background="@drawable/rating_corner"
+                />
+            <TextView
+                android:id="@+id/pRatingInWords"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="120 ratings &amp; 29 reviews"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/btn_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:background="#f2f0f0"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:id="@+id/cartBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@android:color/white"
+                    android:text="ADD TO CART"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <Button
+                    android:id="@+id/buyBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="5"
+                    android:background="?android:attr/colorFocusedHighlight"
+                    android:text="BUY NOW"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
